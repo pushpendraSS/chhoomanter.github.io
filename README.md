@@ -1,98 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Role-Based User Management System</title>
-    <link rel="stylesheet" href="path-to-your-css-file.css">
-</head>
-<body>
+# Role-Based User Management System
 
-    <header>
-        <h1>Role-Based User Management System</h1>
-    </header>
+A user management system that uses Laravel 8 for the backend and React 17 for the frontend, allowing for the creation and management of users with multiple roles. The user interface showcases the listing of users organized by roles in separate tabs, enhancing readability and user experience.
 
-    <section>
-        <p>
-            This project allows you to manage users with various roles using a combination of Laravel for the backend and React for the frontend. Users can be grouped and viewed by their respective roles, and you can even add multiple roles to a user.
-        </p>
-    </section>
+## Table of Contents
 
-    <section>
-        <h2>Features</h2>
-        <ul>
-            <li>User registration system with multiple role assignment.</li>
-            <li>Display users grouped by their roles.</li>
-            <li>Modern user interface using Material-UI components.</li>
-            <li>Role-based tabs for organized viewing.</li>
-        </ul>
-    </section>
+- [Features](#features)
+- [Requirements](#requirements)
+- [Installation](#installation)
+    - [Backend Setup](#backend-setup)
+    - [Frontend Setup](#frontend-setup)
+- [Usage](#usage)
+- [Customization](#customization)
+- [Contributing](#contributing)
+- [License](#license)
 
-    <section>
-        <h2>Requirements</h2>
-        <ul>
-            <li>Node.js & npm</li>
-            <li>PHP >= 7.3</li>
-            <li>Composer</li>
-            <li>Laravel 8</li>
-            <li>MySQL (or any DB supported by Laravel)</li>
-        </ul>
-    </section>
+## Features
 
-    <section>
-        <h2>Installation</h2>
-        <h3>Backend Setup</h3>
-        <ol>
-            <li>Navigate to the Laravel project directory.</li>
-            <li>Install PHP dependencies:</li>
-            <code>composer install</code>
-            <li>Create a `.env` file and configure the database connection.</li>
-            <li>Run migrations:</li>
-            <code>php artisan migrate</code>
-            <li>Seed Roles Data</li>
-            <code>php artisan db:seed --class=RoleSeeder</code>
-            <li>Start the Laravel server:</li>
-            <code>php artisan serve</code>
-        </ol>
+- User registration and management system.
+- Assign multiple roles to users.
+- Display users grouped by their roles in tabs.
+- Interactive UI using Material-UI components and React hooks.
+- Backend powered by Laravel 8 with a relational database setup.
 
-        <h3>Frontend Setup</h3>
-        <ol>
-            <li>Navigate to the React project directory.</li>
-            <li>Install JavaScript dependencies:</li>
-            <code>npm install</code>
-            <li>Start the React development server:</li>
-            <code>npm start</code>
-        </ol>
-    </section>
+## Requirements
 
-    <section>
-        <h2>Usage</h2>
-        <ol>
-            <li>Access the React frontend and register a new user. Assign roles as necessary.</li>
-            <li>View the user list. Users will be organized under tabs based on their roles.</li>
-            <li>Add more users or view users based on their roles as needed.</li>
-        </ol>
-    </section>
+- Node.js & npm
+- PHP >= 7.3
+- Composer
+- Laravel 8
+- MySQL (or any DB supported by Laravel)
 
-    <section>
-        <h2>Customization</h2>
-        <p>This template provides a basic setup. Depending on your requirements, you might want to:</p>
-        <ul>
-            <li>Add authentication and authorization for added security.</li>
-            <li>Integrate more features such as user editing, deleting, etc.</li>
-            <li>Enhance the frontend UI/UX for a more immersive experience.</li>
-        </ul>
-    </section>
+## Installation
 
-    <section>
-        <h2>Contributing</h2>
-        <p>Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.</p>
-    </section>
+### Backend Setup
 
-    <footer>
-        <p>This project is licensed under the MIT License.</p>
-    </footer>
+1. Navigate to the Laravel project directory.
+2. Install PHP dependencies:  
+    ```bash
+    composer install
+3. Create a .env file from .env.example and configure the database connection.
+4. Run migrations to set up the database:
+    ```bash
+    php artisan migrate
+5. Populate role table with data
+    ```bash
+    php artisan db:seed --class=RoleSeeder
+6. Serve the Laravel application:
+    ```bash
+    php artisan serve
 
-</body>
-</html>
+### Frontend Setup
+
+1. Navigate to the React project directory.
+2. Install JavaScript dependencies:
+    ```bash
+    npm install
+3. Start the React development server:
+    ```bash
+    npm start
+
+## Usage
+
+Access the React frontend and navigate to the registration page.
+Register a new user and assign desired roles.
+Go to the user listing page to view users organized by their roles in separate tabs.
+
+## Customization
+
+The current project provides a basic template. Depending on requirements, consider:
+- Implementing authentication and authorization for security.
+- Introducing features like user editing, profile views, deletion, etc.
+- Enhancing the frontend UI/UX further.
+- Integrating more complex role-based access control.
+
+## Contributing
+Contributions are welcome! For major changes or feature additions, please open an issue first to discuss. Ensure that your code follows the existing style conventions of the project.
+
+
+## License
+
+This project is licensed under the MIT License. Ensure you have the necessary permissions and rights before using or distributing this software.
